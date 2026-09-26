@@ -20,7 +20,7 @@
     --card-foreground: 222.2 47.4% 11.2%;
 
     --field-card: 95 74% 90%;
-    --field-card-border: 95.08 71.08% 67.45%;
+    --field-card-border: 192 100% 50%;
     --field-card-foreground: 222.2 47.4% 11.2%;
 
     --widget: 0 0% 97%;
@@ -29,8 +29,9 @@
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
 
-    --primary: 95.08 71.08% 67.45%;
-    --primary-foreground: 95.08 71.08% 10%;
+    /* MPower fork: brand electric cyan #00CCFF, navy #0A1628 text on it */
+    --primary: 192 100% 50%;
+    --primary-foreground: 216 60% 9.8%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -41,7 +42,7 @@
     --destructive: 0 100% 50%;
     --destructive-foreground: 210 40% 98%;
 
-    --ring: 95.08 71.08% 67.45%;
+    --ring: 192 100% 50%;
 
     --radius: 0.5rem;
 
@@ -82,18 +83,18 @@
     --new-white-800: 0, 0%, 90%;
     --new-white-900: 0, 0%, 100%;
 
-    /* Primary - Green */
-    --new-primary-50: 98, 73%, 97%;
-    --new-primary-100: 95, 73%, 94%;
-    --new-primary-200: 94, 70%, 87%;
-    --new-primary-300: 95, 71%, 81%;
-    --new-primary-400: 95, 71%, 74%;
-    --new-primary-500: 95, 71%, 67%;
-    --new-primary-600: 95, 71%, 54%;
-    --new-primary-700: 95, 71%, 41%;
-    --new-primary-800: 95, 71%, 27%;
-    --new-primary-900: 95, 72%, 14%;
-    --new-primary-950: 95, 72%, 7%;
+    /* Primary - MPower fork: brand cyan scale, 500 = #00CCFF */
+    --new-primary-50: 192, 100%, 97%;
+    --new-primary-100: 192, 100%, 93%;
+    --new-primary-200: 192, 100%, 85%;
+    --new-primary-300: 192, 100%, 75%;
+    --new-primary-400: 192, 100%, 62%;
+    --new-primary-500: 192, 100%, 50%;
+    --new-primary-600: 192, 100%, 42%;
+    --new-primary-700: 192, 100%, 33%;
+    --new-primary-800: 192, 100%, 24%;
+    --new-primary-900: 192, 100%, 15%;
+    --new-primary-950: 192, 100%, 8%;
 
     /* Secondary - Info */
     --new-info-50: 210, 54%, 95%;
@@ -164,19 +165,20 @@
 
     --field-border: 214.3 31.8% 91.4%;
 
-    --primary: 95.08 71.08% 67.45%;
-    --primary-foreground: 95.08 71.08% 10%;
+    /* MPower fork: brand electric cyan #00CCFF, navy #0A1628 text on it */
+    --primary: 192 100% 50%;
+    --primary-foreground: 216 60% 9.8%;
 
     --secondary: 0 0% 23.4%;
-    --secondary-foreground: 95.08 71.08% 67.45%;
+    --secondary-foreground: 192 100% 50%;
 
     --accent: 0 0% 27.9%;
-    --accent-foreground: 95.08 71.08% 67.45%;
+    --accent-foreground: 192 100% 50%;
 
     --destructive: 0 87% 62%;
     --destructive-foreground: 0 0% 98%;
 
-    --ring: 95.08 71.08% 67.45%;
+    --ring: 192 100% 50%;
 
     --radius: 0.5rem;
 
