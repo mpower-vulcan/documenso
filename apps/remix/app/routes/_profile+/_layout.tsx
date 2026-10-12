@@ -50,7 +50,7 @@ export default function PublicProfileLayout() {
               to="/"
               className="rounded-md ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 md:inline"
             >
-              <BrandingLogo className="hidden h-6 w-auto sm:block" />
+              <BrandingLogo className="hidden h-8 w-auto sm:block" />
 
               <img
                 src={LogoIcon}

@@ -21,7 +21,7 @@ export default function Layout() {
         </div>
 
         {/* MPower fork: upstream shows no logo on sign-in, sign-up or password pages; ours does */}
-        <BrandingLogo className="mx-auto mb-10 h-8 w-auto" />
+        <BrandingLogo className="mx-auto mb-10 h-14 w-auto" />
 
         <div className="relative w-full">
           <Outlet />
