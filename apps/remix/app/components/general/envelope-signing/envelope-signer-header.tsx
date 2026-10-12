@@ -38,7 +38,7 @@ export const EnvelopeSignerHeader = () => {
             <img
               src={`/api/branding/logo/team/${envelope.teamId}`}
               alt={`${envelope.team.name}'s Logo`}
-              className="h-6 w-auto flex-shrink-0"
+              className="h-10 w-auto flex-shrink-0"
             />
           ) : (
             <Link to="/" className="flex-shrink-0">
