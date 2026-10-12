@@ -47,6 +47,7 @@ import PDFViewerLazy from '~/components/general/pdf-viewer/pdf-viewer-lazy';
 import { useRequiredDocumentSigningAuthContext } from './document-signing-auth-provider';
 import { DocumentSigningCompleteDialog } from './document-signing-complete-dialog';
 import { DocumentSigningRecipientProvider } from './document-signing-recipient-provider';
+import { BrandingLogo } from '~/components/general/branding-logo';
 
 type DocumentSigningBranding = {
   brandingEnabled: boolean;
@@ -169,12 +170,14 @@ export const DocumentSigningPageViewV1 = ({
   return (
     <DocumentSigningRecipientProvider recipient={recipient} targetSigner={targetSigner}>
       <div className="mx-auto w-full max-w-screen-xl sm:px-6">
-        {hasCustomBrandingLogo && (
+        {hasCustomBrandingLogo ? (
           <img
             src={`/api/branding/logo/team/${document.teamId}`}
             alt={`${document.team.name}'s Logo`}
             className="mb-4 h-12 w-auto md:mb-2"
           />
+        ) : (
+          <BrandingLogo className="mb-4 h-12 w-auto md:mb-2" />
         )}
         <h1
           className="block max-w-[20rem] truncate font-semibold text-2xl sm:mt-4 md:max-w-[30rem] md:text-3xl"
