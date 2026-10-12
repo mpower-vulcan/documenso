@@ -1,6 +1,6 @@
 {
-  "name": "MPower Global Document Signing",
-  "short_name": "MPower Sign",
+  "name": "SignCoach",
+  "short_name": "SignCoach",
   "icons": [
     {
       "src": "./android-chrome-192x192.png",
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#0A1628",
+  "theme_color": "#F86828",
   "background_color": "#FFFFFF",
   "display": "standalone"
 }
