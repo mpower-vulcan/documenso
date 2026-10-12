@@ -134,10 +134,9 @@ export function LayoutContent({ children }: { children: React.ReactNode }) {
     <html translate="no" lang={lang} data-theme={theme} className={theme ?? ''} suppressHydrationWarning>
       <head>
         <meta charSet="utf-8" />
-        <link rel="apple-touch-icon" sizes="180x180" href={`${basePath}/apple-touch-icon.png?v=20261012e`} />
-        <link rel="icon" type="image/svg+xml" href={`${basePath}/favicon.svg?v=20261012e`} />
-        <link rel="icon" type="image/png" sizes="32x32" href={`${basePath}/favicon-32x32.png?v=20261012e`} />
-        <link rel="icon" type="image/png" sizes="16x16" href={`${basePath}/favicon-16x16.png?v=20261012e`} />
+        <link rel="apple-touch-icon" sizes="180x180" href={`${basePath}/apple-touch-icon.png?v=20261012f`} />
+        <link rel="icon" type="image/png" sizes="32x32" href={`${basePath}/favicon-32x32.png?v=20261012f`} />
+        <link rel="icon" type="image/png" sizes="16x16" href={`${basePath}/favicon-16x16.png?v=20261012f`} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="manifest" href={`${basePath}/site.webmanifest`} />
         <meta name="google" content="notranslate" />
