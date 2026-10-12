@@ -7,7 +7,7 @@ export type LogoProps = SVGAttributes<SVGSVGElement>;
 export const BrandingLogoIcon = ({ ...props }: LogoProps) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 84" {...props}>
-      <image href="/static/signcoach-icon.png" width="84" height="84" />
+      <image href="/static/signcoach-icon.png?v=20261012b" width="84" height="84" />
     </svg>
   );
 };
