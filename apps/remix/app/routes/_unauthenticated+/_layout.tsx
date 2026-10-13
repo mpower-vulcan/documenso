@@ -2,6 +2,7 @@ import backgroundPattern from '@documenso/assets/images/background-pattern.png';
 import { Outlet } from 'react-router';
 
 import { BrandingLogo } from '~/components/general/branding-logo';
+import { DOCS_URL } from '~/utils/brand';
 
 export default function Layout() {
   return (
@@ -24,6 +25,17 @@ export default function Layout() {
 
         <div className="relative w-full">
           <Outlet />
+        </div>
+
+        <div className="flex justify-center py-3 print:hidden">
+          <a
+            href={DOCS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground text-xs hover:underline"
+          >
+            Help and docs
+          </a>
         </div>
 
       </div>

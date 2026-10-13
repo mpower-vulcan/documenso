@@ -10,3 +10,6 @@ export const BRAND_DESCRIPTION = 'Sign documents and understand what you are sig
 // AGPL-3.0 section 13: users interacting with this modified version over a network must be offered
 // its source. This is the public fork carrying our changes.
 export const SOURCE_CODE_URL = 'https://github.com/mpower-vulcan/documenso';
+
+// Branded documentation (apps/docs in this fork, published as a static site).
+export const DOCS_URL = 'https://signcoach-docs.pages.dev';

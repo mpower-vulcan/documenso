@@ -28,6 +28,7 @@ import { useMemo, useState } from 'react';
 import { Link, useLocation } from 'react-router';
 
 import { useOptionalCurrentTeam } from '~/providers/team';
+import { DOCS_URL } from '~/utils/brand';
 
 export const OrgMenuSwitcher = () => {
   const { _ } = useLingui();
@@ -291,6 +292,11 @@ export const OrgMenuSwitcher = () => {
                 </Link>
               </DropdownMenuItem>
 
+              <DropdownMenuItem className="px-4 py-2 text-muted-foreground" asChild>
+                <a href={DOCS_URL} target="_blank" rel="noopener noreferrer">
+                  Help and docs
+                </a>
+              </DropdownMenuItem>
               <DropdownMenuItem className="px-4 py-2 text-muted-foreground" asChild>
                 <Link to="/legal">Legal</Link>
               </DropdownMenuItem>
