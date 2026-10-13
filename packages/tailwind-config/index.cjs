@@ -68,15 +68,15 @@ module.exports = {
           foreground: 'hsl(var(--widget-foreground))',
         },
         // MPower fork: the palette keeps its upstream name (59 call sites) but carries the brand
-        // SignCoach orange scale, 500 = #F86828, instead of Documenso green.
+        // SignCoach orange scale, 500 = #F96B2D, instead of Documenso green.
         documenso: {
-          DEFAULT: '#F86828',
+          DEFAULT: '#F96B2D',
           50: '#FFF5F0',
           100: '#FFE8DC',
           200: '#FFCFB5',
           300: '#FFB088',
           400: '#FC8C56',
-          500: '#F86828',
+          500: '#F96B2D',
           600: '#DE5114',
           700: '#B33F0E',
           800: '#86300B',

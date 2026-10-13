@@ -20,7 +20,7 @@
     --card-foreground: 0 0% 11%;
 
     --field-card: 95 74% 90%;
-    --field-card-border: 18.5 94% 56%;
+    --field-card-border: 18.2 94% 58%;
     --field-card-foreground: 0 0% 11%;
 
     --widget: 0 0% 97%;
@@ -29,8 +29,8 @@
     --border: 20 18% 90%;
     --input: 214.3 31.8% 91.4%;
 
-    /* SignCoach: brand orange #F86828, ink #1B1F24 text on it */
-    --primary: 18.5 94% 56%;
+    /* SignCoach: brand orange #F96B2D (the Coach wordmark), ink #1B1F24 text on it */
+    --primary: 18.2 94% 58%;
     --primary-foreground: 214 14% 12%;
 
     --secondary: 20 30% 96%;
@@ -42,7 +42,7 @@
     --destructive: 0 100% 50%;
     --destructive-foreground: 210 40% 98%;
 
-    --ring: 18.5 94% 56%;
+    --ring: 18.2 94% 58%;
 
     --radius: 0.5rem;
 
@@ -53,7 +53,7 @@
     --recipient-green: 100 48% 55%;
     --recipient-blue: 214 83% 40%; /* signature blue #115ABB, second recipient */
     --recipient-purple: 266 100% 64%;
-    --recipient-orange: 18.5 94% 56%; /* brand orange, first recipient */
+    --recipient-orange: 18.2 94% 58%; /* brand orange, first recipient */
     --recipient-yellow: 51 100% 43%;
     --recipient-pink: 313 65% 57%;
 
@@ -83,13 +83,13 @@
     --new-white-800: 0, 0%, 90%;
     --new-white-900: 0, 0%, 100%;
 
-    /* Primary - SignCoach orange scale, 500 = #F86828 */
+    /* Primary - SignCoach orange scale, 500 = #F96B2D */
     --new-primary-50: 18.5, 94%, 97%;
     --new-primary-100: 18.5, 94%, 93%;
     --new-primary-200: 18.5, 94%, 86%;
     --new-primary-300: 18.5, 94%, 76%;
     --new-primary-400: 18.5, 94%, 66%;
-    --new-primary-500: 18.5, 94%, 56%;
+    --new-primary-500: 18.2, 94%, 58%;
     --new-primary-600: 18.5, 84%, 47%;
     --new-primary-700: 18.5, 84%, 38%;
     --new-primary-800: 18.5, 84%, 29%;
@@ -165,20 +165,20 @@
 
     --field-border: 214.3 31.8% 91.4%;
 
-    /* SignCoach: brand orange #F86828, ink #1B1F24 text on it */
-    --primary: 18.5 94% 56%;
+    /* SignCoach: brand orange #F96B2D (the Coach wordmark), ink #1B1F24 text on it */
+    --primary: 18.2 94% 58%;
     --primary-foreground: 214 14% 12%;
 
     --secondary: 0 0% 23.4%;
-    --secondary-foreground: 18.5 94% 56%;
+    --secondary-foreground: 18.2 94% 58%;
 
     --accent: 0 0% 27.9%;
-    --accent-foreground: 18.5 94% 56%;
+    --accent-foreground: 18.2 94% 58%;
 
     --destructive: 0 87% 62%;
     --destructive-foreground: 0 0% 98%;
 
-    --ring: 18.5 94% 56%;
+    --ring: 18.2 94% 58%;
 
     --radius: 0.5rem;
 
