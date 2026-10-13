@@ -5,7 +5,7 @@
 // (see the SignCoach section and the fork changelog rule: every app change reviews the docs).
 //
 // What it does, in text nodes only (never inside code blocks or inline code):
-//   "Documenso"            -> "SignCoach"   (except pages that opt out with frontmatter `keepUpstreamName: true`)
+//   "Documenso"            -> "SignCoach"   (except pages under content/docs/users/signcoach/)
 //   app.documenso.com      -> the SignCoach app URL (also in link and image URLs and in code, since API
 //                             examples must point at our instance)
 //   docs.documenso.com/... -> relative docs links
@@ -32,9 +32,11 @@ function rewriteText(text: string): string {
 
 export function remarkSignCoach() {
   return (tree: Root, file: unknown) => {
-    const data = (file as { data?: { frontmatter?: Record<string, unknown> } }).data;
-    const fm = data?.frontmatter ?? {};
-    const keepName = fm.keepUpstreamName === true;
+    // Pages that must keep the upstream name (the open-source notice) opt out by path: anything under
+    // users/signcoach/. Frontmatter is not exposed to remark plugins in this pipeline.
+    const f = file as { path?: string; history?: string[] };
+    const where = (f.path ?? f.history?.[0] ?? '').replace(/\/g, '/');
+    const keepName = where.includes('/users/signcoach/');
     const walk = (node: AnyNode) => {
       if (node.type === 'code' || node.type === 'inlineCode') {
         // code keeps the product name but must hit our instance, not app.documenso.com
