@@ -6,18 +6,18 @@
   :root,
   .dark-mode-disabled {
     --background: 0 0% 100%;
-    --foreground: 222.2 47.4% 11.2%;
+    --foreground: 0 0% 11%; /* SignCoach ink #1C1C1C */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 20 30% 96%; /* warm neutral, not slate */
+    --muted-foreground: 0 0% 42%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 47.4% 11.2%;
+    --popover-foreground: 0 0% 11%;
 
     --card: 0 0% 100%;
     --card-border: 214.3 31.8% 91.4%;
     --card-border-tint: 112 205 159;
-    --card-foreground: 222.2 47.4% 11.2%;
+    --card-foreground: 0 0% 11%;
 
     --field-card: 95 74% 90%;
     --field-card-border: 18.5 94% 56%;
@@ -26,17 +26,17 @@
     --widget: 0 0% 97%;
     --widget-foreground: 0 0% 95%;
 
-    --border: 214.3 31.8% 91.4%;
+    --border: 20 18% 90%;
     --input: 214.3 31.8% 91.4%;
 
     /* SignCoach: brand orange #F86828, ink #1B1F24 text on it */
     --primary: 18.5 94% 56%;
     --primary-foreground: 214 14% 12%;
 
-    --secondary: 210 40% 96.1%;
+    --secondary: 20 30% 96%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --accent: 210 40% 96.1%;
+    --accent: 20 30% 96%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 100% 50%;
@@ -51,9 +51,9 @@
     --gold: 47.9 95.8% 53.1%;
 
     --recipient-green: 100 48% 55%;
-    --recipient-blue: 212 56% 50%;
+    --recipient-blue: 214 83% 40%; /* signature blue #115ABB, second recipient */
     --recipient-purple: 266 100% 64%;
-    --recipient-orange: 36 92% 54%;
+    --recipient-orange: 18.5 94% 56%; /* brand orange, first recipient */
     --recipient-yellow: 51 100% 43%;
     --recipient-pink: 313 65% 57%;
 
