@@ -35,7 +35,7 @@ export function remarkSignCoach() {
     // Pages that must keep the upstream name (the open-source notice) opt out by path: anything under
     // users/signcoach/. Frontmatter is not exposed to remark plugins in this pipeline.
     const f = file as { path?: string; history?: string[] };
-    const where = (f.path ?? f.history?.[0] ?? '').replace(/\/g, '/');
+    const where = (f.path ?? f.history?.[0] ?? '').split('\\').join('/');
     const keepName = where.includes('/users/signcoach/');
     const walk = (node: AnyNode) => {
       if (node.type === 'code' || node.type === 'inlineCode') {
