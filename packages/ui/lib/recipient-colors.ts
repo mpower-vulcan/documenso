@@ -77,7 +77,8 @@ const CSS_VARIANT = {
   hover: 'hover',
 };
 
-const AVAILABLE_RECIPIENT_COLORS = ['green', 'blue', 'purple', 'orange', 'yellow', 'pink'] as const;
+// SignCoach: brand orange first, signature blue second, then the rest.
+const AVAILABLE_RECIPIENT_COLORS = ['orange', 'blue', 'purple', 'green', 'pink', 'yellow'] as const;
 
 export const RECIPIENT_DYNAMIC_CLASS = {
   pattern: new RegExp(
