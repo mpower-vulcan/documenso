@@ -2,5 +2,12 @@
   "title": "Users",
   "description": "Send and sign documents",
   "root": true,
-  "pages": ["getting-started", "documents", "templates", "organisations", "settings"]
+  "pages": [
+    "signcoach",
+    "getting-started",
+    "documents",
+    "templates",
+    "organisations",
+    "settings"
+  ]
 }

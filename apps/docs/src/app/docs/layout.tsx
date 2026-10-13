@@ -2,7 +2,7 @@
 
 import type * as PageTree from 'fumadocs-core/page-tree';
 import { DocsLayout } from 'fumadocs-ui/layouts/docs';
-import { CodeIcon, ServerIcon, UserIcon } from 'lucide-react';
+import { CodeIcon, UserIcon } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useMemo } from 'react';
@@ -24,13 +24,6 @@ const ROOT_SECTIONS = [
     subtitle: 'API and integrations',
     icon: CodeIcon,
     href: '/docs/developers',
-  },
-  {
-    id: 'self-hosting',
-    label: 'Self-Hosting',
-    subtitle: 'Deploy your own instance',
-    icon: ServerIcon,
-    href: '/docs/self-hosting',
   },
 ];
 
@@ -90,7 +83,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     // pathParts = ['docs', 'users', 'getting-started', ...]
 
     if (pathParts.length >= 2) {
-      const section = pathParts[1]; // 'users', 'developers', or 'self-hosting'
+      const section = pathParts[1]; // 'users' or 'developers'
       if (ROOT_SECTIONS.some((s) => s.id === section)) {
         return { tree: getFilteredPageTree(section), activeSection: section };
       }

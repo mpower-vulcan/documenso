@@ -1,17 +1,11 @@
 import { DocsBody, DocsDescription, DocsPage, DocsTitle } from 'fumadocs-ui/layouts/docs/page';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { LLMCopyButton, ViewOptions } from '@/components/ai/page-actions';
-import { getPageImage, source } from '@/lib/source';
+import { source } from '@/lib/source';
 import { getMDXComponents } from '@/mdx-components';
 
-const gitConfig = {
-  user: 'documenso',
-  repo: 'documenso',
-  branch: 'main',
-  contentPath: 'apps/docs/content/docs',
-};
-
+// SignCoach docs: static export. Upstream's per-page "copy for LLM" and "open on GitHub" actions and the
+// generated OG images need a server, so they are not included here.
 export default async function Page(props: PageProps<'/docs/[[...slug]]'>) {
   const params = await props.params;
   const page = source.getPage(params.slug);
@@ -27,14 +21,7 @@ export default async function Page(props: PageProps<'/docs/[[...slug]]'>) {
       {!page.data.full && (
         <>
           <DocsTitle>{page.data.title}</DocsTitle>
-          <DocsDescription className="mb-0">{page.data.description}</DocsDescription>
-          <div className="flex flex-row items-center gap-2 border-b pb-6">
-            <LLMCopyButton markdownUrl={`${page.url}.mdx`} />
-            <ViewOptions
-              markdownUrl={`${page.url}.mdx`}
-              githubUrl={`https://github.com/${gitConfig.user}/${gitConfig.repo}/blob/${gitConfig.branch}/${gitConfig.contentPath}/${page.path}`}
-            />
-          </div>
+          <DocsDescription>{page.data.description}</DocsDescription>
         </>
       )}
       <DocsBody>
@@ -56,16 +43,8 @@ export async function generateMetadata(props: PageProps<'/docs/[[...slug]]'>): P
     notFound();
   }
 
-  const ogImage = getPageImage(page).url;
-
   return {
     title: page.data.title,
     description: page.data.description,
-    openGraph: {
-      images: ogImage,
-    },
-    twitter: {
-      images: ogImage,
-    },
   };
 }

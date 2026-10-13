@@ -11,13 +11,12 @@ export const source = loader({
 });
 
 // Shared sections that should appear in all main section sidebars
-const SHARED_SECTIONS = ['concepts', 'compliance', 'policies'];
+const SHARED_SECTIONS = ['concepts', 'compliance'];
 
 // Section titles for the sidebar separators
 const SECTION_TITLES: Record<string, string> = {
   users: 'User Guide',
   developers: 'Developer Guide',
-  'self-hosting': 'Self-Hosting Guide',
 };
 
 /**

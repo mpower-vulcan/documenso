@@ -1,15 +1,12 @@
 {
   "title": "Developers",
-  "description": "Integrate with Documenso",
+  "description": "Integrate with SignCoach",
   "root": true,
   "pages": [
     "getting-started",
     "api",
     "webhooks",
     "embedding",
-    "examples",
-    "local-development",
-    "contributing",
-    "demo-environment"
+    "examples"
   ]
 }
