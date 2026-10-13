@@ -31,8 +31,9 @@ function rewriteText(text: string): string {
 }
 
 export function remarkSignCoach() {
-  return (tree: Root, file: { data?: { frontmatter?: Record<string, unknown> } }) => {
-    const fm = (file.data?.frontmatter ?? {}) as Record<string, unknown>;
+  return (tree: Root, file: unknown) => {
+    const data = (file as { data?: { frontmatter?: Record<string, unknown> } }).data;
+    const fm = data?.frontmatter ?? {};
     const keepName = fm.keepUpstreamName === true;
     const walk = (node: AnyNode) => {
       if (node.type === 'code' || node.type === 'inlineCode') {
