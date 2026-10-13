@@ -15,7 +15,6 @@ import { Header } from '~/components/general/app-header';
 import { GenericErrorLayout } from '~/components/general/generic-error-layout';
 import { OrganisationBillingBanner } from '~/components/general/organisations/organisation-billing-banner';
 import { OrganisationQuotaBanner } from '~/components/general/organisations/organisation-quota-banner';
-import { SourceCodeLink } from '~/components/general/source-code-link';
 import { VerifyEmailBanner } from '~/components/general/verify-email-banner';
 import { TeamProvider } from '~/providers/team';
 
@@ -132,7 +131,7 @@ export default function Layout({ loaderData, params, matches }: Route.ComponentP
             <Outlet />
           </main>
 
-          {!hideHeader && <SourceCodeLink />}
+          
         </div>
       </TeamProvider>
     </OrganisationProvider>

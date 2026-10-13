@@ -291,6 +291,10 @@ export const OrgMenuSwitcher = () => {
                 </Link>
               </DropdownMenuItem>
 
+              <DropdownMenuItem className="px-4 py-2 text-muted-foreground" asChild>
+                <Link to="/legal">Legal</Link>
+              </DropdownMenuItem>
+
               {IS_BILLING_ENABLED() && (
                 <DropdownMenuItem className="px-4 py-2 text-muted-foreground" asChild>
                   <Link to="/settings/billing">

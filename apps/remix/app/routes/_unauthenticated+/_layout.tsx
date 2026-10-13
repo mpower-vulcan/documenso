@@ -2,7 +2,6 @@ import backgroundPattern from '@documenso/assets/images/background-pattern.png';
 import { Outlet } from 'react-router';
 
 import { BrandingLogo } from '~/components/general/branding-logo';
-import { SourceCodeLink } from '~/components/general/source-code-link';
 
 export default function Layout() {
   return (
@@ -27,7 +26,6 @@ export default function Layout() {
           <Outlet />
         </div>
 
-        <SourceCodeLink />
       </div>
     </main>
   );

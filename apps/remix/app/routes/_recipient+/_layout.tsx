@@ -10,7 +10,6 @@ import { useEffect } from 'react';
 import { isRouteErrorResponse, Link, Outlet } from 'react-router';
 import { Header as AuthenticatedHeader } from '~/components/general/app-header';
 import { GenericErrorLayout } from '~/components/general/generic-error-layout';
-import { SourceCodeLink } from '~/components/general/source-code-link';
 import { BRAND_NAME } from '~/utils/brand';
 import type { Route } from './+types/_layout';
 
@@ -49,7 +48,6 @@ export default function RecipientLayout({ matches }: Route.ComponentProps) {
         <Outlet />
       </main>
 
-      <SourceCodeLink />
     </div>
   );
 }
