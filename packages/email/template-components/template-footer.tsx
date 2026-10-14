@@ -4,6 +4,7 @@ import { Fragment } from 'react';
 import { Link, Section, Text } from '../components';
 import { useBranding } from '../providers/branding';
 import { getSafeBrandingUrl } from '../utils/branding-url';
+import { EMAIL_BRAND_NAME, EMAIL_BRAND_URL, EMAIL_COMPANY_LINE_1, EMAIL_COMPANY_LINE_2 } from '../brand';
 
 export type TemplateFooterProps = {
   isDocument?: boolean;
@@ -33,8 +34,8 @@ export const TemplateFooter = ({ isDocument = true, reportUrl }: TemplateFooterP
         <Text className="my-4 text-base text-muted-foreground">
           <Trans>
             This document was sent using{' '}
-            <Link className="text-primary" href="https://documen.so/mail-footer">
-              Documenso
+            <Link className="text-primary" href={EMAIL_BRAND_URL}>
+              {EMAIL_BRAND_NAME}
             </Link>
             .
           </Trans>
@@ -64,9 +65,9 @@ export const TemplateFooter = ({ isDocument = true, reportUrl }: TemplateFooterP
 
       {!branding.brandingEnabled && (
         <Text className="my-8 text-muted-foreground text-sm">
-          Documenso, Inc.
+          {EMAIL_COMPANY_LINE_1}
           <br />
-          2261 Market Street, #5211, San Francisco, CA 94114, USA
+          {EMAIL_COMPANY_LINE_2}
         </Text>
       )}
     </Section>
