@@ -7,9 +7,9 @@ export type LogoProps = SVGAttributes<SVGSVGElement>;
 // class. Kept as an <svg> wrapper so every existing caller's sizing classes keep working.
 export const BrandingLogo = ({ ...props }: LogoProps) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1558 300" {...props}>
-      <image className="dark:hidden" href="/static/signcoach-lockup.png?v=20261012d" width="1558" height="300" />
-      <image className="hidden dark:block" href="/static/signcoach-lockup-dark.png?v=20261012d" width="1558" height="300" />
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1393 281" {...props}>
+      <image className="dark:hidden" href="/static/signcoach-lockup.png?v=20261014" width="1393" height="281" />
+      <image className="hidden dark:block" href="/static/signcoach-lockup-dark.png?v=20261014" width="1393" height="281" />
     </svg>
   );
 };
